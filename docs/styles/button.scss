@@ -1,0 +1,50 @@
+/* taro-ui button样式重写 */
+
+// 无法使用sass函数
+// default 按钮覆盖样式
+/* .at-button {
+    padding: 0px !important;
+    line-height: 55px !important;
+    margin-right: 20px;
+    border: 2px solid rgba(202, 202, 202, 1);
+    height: 64px !important;
+    width: 160px !important;
+    border-radius: 6px !important;
+}
+
+.at-button--normal,
+.at-button__wxbutton {
+    display: inline-block;
+    .at-button__text {
+        display: inline-block;
+        height: 24px;
+        margin-bottom: 20px;
+        font-size: 24px;
+    }
+} */
+
+// secondary 样式覆盖
+/* .at-button {
+    padding: 0px !important;
+    line-height: 55px !important;
+    margin-right: 20px;
+    border: 2px solid rgba(202, 202, 202, 1);
+    height: 64px !important;
+    width: 160px !important;
+    border-radius: 6px !important;
+}
+
+.at-button--normal,
+.at-button__wxbutton {
+    display: inline-block;
+    .at-button__text {
+        display: inline-block;
+        height: 24px;
+        margin-bottom: 20px;
+        font-size: 24px;
+    }
+} */
+
+button:after {
+  border: none;
+}

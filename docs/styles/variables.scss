@@ -1,0 +1,48 @@
+$text-color: #000;
+$background-color: #fff;
+$border-color:rgba(231, 231, 231, 1);
+/**通用颜色*/
+
+$base-color: #00a66f; //主体页面色
+$info-color: #ec5a2e; //金额，提示
+$input-disabled-color: rgba(173, 178, 175, 0.2); //input颜色
+$btn-disabled-color: rgba(173, 178, 175, 1); //按钮禁止颜色
+$gray-color: rgba(168, 168, 168, 1); // 普通浅灰色
+$base-background: #F8F8F8; //主体页面背景#F8F8F8
+$title-background: #fb8901; //背景橙色,标题栏、提交等按钮通用
+$seperate-background: #f0f0f0; // 间隔的背影
+$content-background: #ffffff; //内容背景
+$line-background: #e5e5e5; //下划线
+$text-common-color: #333333; //通用文本颜色
+$text-somber-color: #858585; //内容文本浅黑
+$text-title-color: #000000; //标题栏文本颜色
+$text-input-color: #8a8a8a; //输入框文本颜色
+$verification-background: #ffdead; //获取验证码背景
+$tips-background: #ffe7ba; // 提示背景色
+/**通用字体*/
+
+$text-xs-size: 84px; //超大字体大小
+$text-md-size: 60px; //超大中等字体大小
+$text-sm-size: 48px; //较大字体大小
+$title-center-size: 40px; //标题栏标题字体大小
+$content-text-size: 32px; //正常文本大小、提交按钮、标题栏右侧
+$content-text-size28: 28px;
+$content-text-size26: 26px;
+$content-text-size14: 14px;
+$content-text-size12: 12px;
+/**通用按钮*/
+
+$base-btn-bgc: #4d7ce8; // 普通按钮
+$select-btn-bgc: rgba(242, 251, 250, 1); // 选中后按钮
+/**卡片阴影*/
+
+$base-shadow: 0px 4px 8px 0px rgba(42, 125, 98, 0.1);
+// Named Color Variables
+// --------------------------------------------------
+// Named colors makes it easy to reuse colors on various components.
+// It's highly recommended to change the default colors
+// to match your app's branding. Ionic uses a Sass map of
+// colors so you can add, rename and remove colors as needed.
+// The "primary" color is the only required color in the map.
+$colors: ( green: #00a66f, orange: #fb8901, primary: #fb8901, blue: #488aff, secondary: #32db64, danger: #f53d3d, light: #f4f4f4, dark: #222, gray: #d9d9d9, white: #fff, );
+$badge-background-color: #ff4a31;

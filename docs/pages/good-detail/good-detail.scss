@@ -1,0 +1,306 @@
+@import '../../styles/variables.scss';
+@import '../../styles/button.scss';
+$label-color: rgba(155, 155, 155, 1);
+.product-detail {
+  background-color: $base-background;
+  .mg-bt {
+    margin-bottom: 20px !important;
+  }
+}
+
+.detail-swiper {
+  width: 100%;
+  min-height: 750px;
+  .swiper-item {
+    image {
+      width: 100%;
+      height: 100%;
+    }
+  }
+}
+
+// 商品信息
+.detail-content {
+  position: relative;
+  // min-height: 350px;
+  padding: 30px;
+  margin-bottom: 20px;
+  background: $content-background;
+  box-shadow: $base-shadow;
+  .price-wrap {
+    padding-bottom: 20px;
+    view {
+      display: inline-block;
+    }
+    .current-price {
+      color: $info-color;
+      font-size: 32px;
+      margin-right: 20px;
+      margin-bottom: 20px;
+      font-weight: bold;
+      text {
+        position: relative;
+        // left: -10px;
+        font-size: 42px;
+      }
+    }
+    .origin-price {
+      display: inline-block;
+      color: rgb(105, 105, 105);
+      font-size: 26px;
+      text-decoration: line-through;
+      font-weight: normal;
+    }
+    .orange {
+      color: $info-color;
+      text-decoration: none;
+      margin-left: 15px;
+    }
+  }
+  .title-wrap {
+    position: relative;
+    margin-bottom: 15px;
+    .title {
+      display: inline-block;
+      width: calc(100% - 90px);
+      font-size: $content-text-size;
+    }
+    .title-share-pic {
+      position: absolute;
+      right: 20px;
+      top: 50%;
+      transform: translate(0, -50%);
+      width: 42px;
+      height: 42px;
+    }
+  }
+  .sale-wrap {
+    color: rgba(168, 168, 168, 1);
+    .transport {
+      margin-bottom: 25px;
+      display: flex;
+      .tran-item {
+        flex: 8;
+        font-size: $content-text-size28;
+      }
+      .stock-addr {
+        display: flex;
+        flex: 4;
+        justify-content: flex-end;
+      }
+      .remain-num {
+        flex: 12;
+        margin-left: 40px;
+        text {
+          color: $info-color;
+          font-weight: bold;
+        }
+      }
+    }
+    .small-wrap {
+      font-size: 24px;
+      margin-bottom: 10px;
+      .small-title {
+        width: 96px;
+        display: inline-block;
+        margin-right: 40px;
+        vertical-align: top;
+      }
+      text {
+        display: inline-block;
+        color: $info-color;
+        width: 550px;
+      }
+      .suggest-gray {
+        color: rgba(168, 168, 168, 1);
+      }
+    }
+    .tips {
+      font-size: 24px;
+      overflow: hidden;
+      .tips-title {
+        float: left;
+        width: 96px;
+        display: inline-block;
+        margin-right: 40px;
+        vertical-align: top;
+      }
+      .tips-content {
+        float: left;
+        width: calc(100% - 136px);
+      }
+      text {
+        display: inline-block;
+        color: rgba(74, 74, 74, 1);
+        width: 550px;
+      }
+    }
+  }
+  .share-btn {
+    position: absolute;
+    right: -4px;
+    top: 30px;
+    width: 108px;
+    height: 64px;
+    background: rgba(242, 251, 250, 1);
+    box-shadow: 0px 0px 4px 0px rgba(9, 100, 69, 0.2);
+    border-radius: 48px 0px 0px 48px;
+    font-size: 24px;
+    padding: 0;
+    .share-btn-pic {
+      width: 24px;
+      height: 24px;
+      position: absolute;
+      left: 14px;
+      top: 18px;
+    }
+    text {
+      position: relative;
+      width: 100%;
+      color: $base-color;
+      display: inline-block;
+      text-align: center;
+      padding-left: 12px;
+      line-height: 58px;
+    }
+  }
+}
+
+// 费用
+.fee-content {
+  padding: 0 15px;
+  border-radius: 0px;
+  margin: 0;
+  line-height: 112px;
+  font-size: 32px;
+  .service-title {
+    color: $label-color;
+  }
+  .service-type {
+    position: relative;
+    left: 20px;
+    flex-grow: 20;
+    text-align: right;
+  }
+}
+
+// 图文
+.image-content {
+  min-height: 300px;
+  margin-bottom: 162px;
+  background: $content-background;
+  box-shadow: $base-shadow;
+  padding: 10px 26px 32px 26px;
+  .img-title {
+    display: block;
+    padding: 30px;
+    font-size: 40px;
+    font-weight: bold;
+  }
+  image {
+    width: 100%;
+  }
+}
+
+.desc {
+  text {
+    display: block;
+    line-height: 40px;
+  }
+}
+
+.down-btn {
+  position: fixed;
+  bottom: 162px;
+  width: 100%;
+  line-height: 96px;
+  background-color: #666666;
+  color: #fff;
+  font-size: 32px;
+  text-align: center;
+}
+
+// 底部
+.detail-bottom-btns {
+  display: flex;
+  box-sizing: border-box;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background: $content-background;
+  box-shadow: 0px -2px 8px 0px rgb(0, 122, 31);
+  border-radius: 0;
+  .btn-wrap {
+    flex: 1;
+  }
+  .nav-logo {
+    float: left;
+    display: inline-block;
+    font-size: 20px;
+    text-align: center;
+    background-color: #fff;
+    height: 100%;
+    padding: 0;
+    .nav-img {
+      display: block;
+      width: 48px;
+      height: 48px;
+      background: rgba(0, 0, 0, 1);
+      padding: 0 15px;
+      margin: 0 20px;
+      background: $content-background;
+    }
+  }
+  .nav-btn {
+    position: relative;
+    float: left;
+    left: 20px;
+    display: inline-block;
+    height: 100%;
+    .at-button {
+      display: inline-block;
+      width: 230px;
+      height: 70px;
+      border-radius: 0;
+      border-color: $base-color;
+      line-height: 70px;
+      font-size: 30px;
+    }
+    .shop-btn {
+      background-color: #fff;
+      color: $base-color;
+      border-radius: 8px 0 0 8px;
+    }
+    .order-btn {
+      background-color: $base-color;
+      color: $content-background;
+      border-radius: 0 8px 8px 0;
+    }
+  }
+  .nav-content {
+    top: 50%;
+    position: relative;
+    transform: translateY(-50%);
+    line-height: 32px;
+  }
+}
+
+.copy-tips {
+  .toast-body {
+    width: 450px;
+    opacity: 0.9;
+    border-radius: 74px !important;
+    padding: 24px 50px !important;
+    .toast-body-content__info {
+      text-align: left;
+    }
+  }
+}
+
+.at-button--primary {
+  background-color: $base-color;
+  border: 1px solid rgb(0, 129, 6);
+  border-top: 0;
+  border-radius: 0;
+}
