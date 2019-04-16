@@ -1,0 +1,13 @@
+.navigation-wrap {
+  position: fixed;
+  top: 54px;
+  width: 100%;
+  z-index: 1;
+  height: 66px;
+  line-height: 66px;
+  padding: 0 8px;
+  .back-icon {
+    width: 80px;
+    height: 100%;
+  }
+}

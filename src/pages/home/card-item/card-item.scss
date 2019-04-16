@@ -1,0 +1,170 @@
+@import '../../../styles/variables.scss';
+@import '../../../styles/button.scss';
+
+.good-item-wrap {
+  margin: 20px 30px;
+  height:615px;
+  background:rgba(255,255,255,1);
+  box-shadow:0px 4px 4px 0px rgba(9,100,69,0.2);
+  border-radius:16px;
+  overflow: hidden;
+
+  .image-wrap {
+    position: relative;
+    width: 100%;
+    height: 360px;
+    .image-tips {
+      position: absolute;
+      top: 0;
+      left: 60px;
+      width:68px;
+      height:64px;
+      image {
+        width: 100%;
+        height: 100%;
+      }
+      text {
+        position: absolute;
+        left: 0;
+        top: 10px;
+        display: inline-block;
+        width: 100%;
+        height: 100%;
+        text-align: center;
+        font-size: 24px;
+        color: #fff;
+      }
+    }
+    .image-show {
+      width: 100%;
+      height: 360px;
+    }
+    .image-humbnail {
+      position:absolute;
+      right:34px;
+      bottom:14px;
+      image {
+        display: inline-block;
+        width: 22px;
+        height: 22px;
+        position: relative;
+        top: 4px;
+      }
+      text {
+        display: inline-block;
+        width:16px;
+        height:34px;
+        font-size:24px;
+        color: #fff;
+        margin-left:12px;
+
+      }
+    }
+  }
+
+  .title-wrap {
+    position: relative;
+    padding: 0 20px;
+    height: 100px;
+    padding-top: 10px;
+    .title {
+      display: flex;
+      justify-content:center;
+      // width:84%;
+      height:90px;
+      font-size:30px;
+      font-weight:600;
+      color:rgba(0,0,0,1);
+      line-height:48px;
+
+      overflow: hidden;
+      text-overflow: ellipsis;
+      display: -webkit-box;
+      -webkit-line-clamp: 2;
+      -webkit-box-orient: vertical;
+    }
+    .share-btn {
+      position: absolute;
+      right: -6px;
+      top: 50%;
+      transform: translate(0, -50%);
+      width:16%;
+      height:64px;
+      background:rgba(242,251,250,1);
+      box-shadow:0px 0px 8px 0px rgba(9,100,69,0.2);
+      border-radius:48px 0px 0px 48px;
+      font-size:24px;
+      padding:0;
+
+      .share-btn-pic {
+        width:24px;
+        height:24px;
+        position:absolute;
+        left:14px;
+        top:18px;
+      }
+      text {
+        position:relative;
+        width:100%;
+        color:$base-color;
+        display:inline-block;
+        text-align:center;
+        padding-left:12px;
+        line-height:58px;
+      }
+    }
+  }
+
+  .detail-wrap {
+    position: relative;
+    padding: 0 20px;
+    height: 170px;
+    .remain-num {
+      color: $info-color;
+      display: block;
+      width:100%;
+      height:60px;
+      font-size:28px;
+      line-height:60px;
+      text {
+        margin-left: 4px;
+      }
+    }
+    .price-wrap {
+      // width: calc(100% - 176px);
+      max-height: 100px;
+      view {
+        display: inline-block;
+      }
+      .current-price {
+        color: $info-color;
+        font-size: 30px;
+        font-weight: bold;
+        margin-right: 20px;
+        text {
+          position: relative;
+          font-size: 34px;
+          margin-left: 4px;
+          margin-right: 10px;
+        }
+      }
+      .origin-price {
+        display: inline-block;
+        color: rgb(105, 105, 105);
+        font-size: 26px;
+        text-decoration: line-through;
+        font-weight: normal;
+      }
+    }
+    .buy-btn {
+      position: absolute;
+      bottom: 47px;
+      right: 20px;
+      width: 176px;
+      height:64px;
+      font-size: 26px;
+      background-color: $base-color;
+      color:#fff;
+    }
+  }
+}
